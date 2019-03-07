@@ -4,7 +4,7 @@ title:      HTML文件使用jQuery之 $ 的概念注意
 subtitle:   
 date:       2019-03-07
 author:     WHD
-header-img: img/post-bg-ios11.jpg
+header-img: img/post-bg-keybord.jpg
 catalog: 	 true
 tags:
     - HTML
