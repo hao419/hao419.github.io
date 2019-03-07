@@ -16,7 +16,8 @@ tags:
 
 # 正文
 
-##forEach
+## forEach
+
 **forEach**： array.forEach( function(){ } )
 
 **for-in**：主要讲下它的几个缺点
@@ -28,7 +29,8 @@ tags:
 
 **for-of**
 
-##总结
+## 总结
+
 for…in与for…of 
 语法格式对比：
 

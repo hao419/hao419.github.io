@@ -15,8 +15,9 @@ tags:
     - explode
 ---
 
-#正文
-##JS方面
+# 正文
+
+## JS方面
  
 ①数组变成字符串：
 
@@ -43,7 +44,7 @@ ss1 = s1.split('');  //["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]
 
 split(”,”,3)第二个参数 3表示 分割后数组中每个元素的内容长度为3！
 
-##PHP方面
+## PHP方面
 
 ①数组变成字符串：
 
@@ -59,7 +60,8 @@ $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
 
 $pieces = explode(" ", $pizza);
 ```
-##JAVA 方面
+
+## JAVA 方面
 
 int 转为 String:
 
