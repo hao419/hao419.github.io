@@ -3,7 +3,7 @@ layout:     post
 title:      HTML文件使用jQuery之 $ 的概念注意
 subtitle:   
 date:       2019-03-07
-author:     WHD
+author:     Wason
 header-img: img/post-bg-keybord.jpg
 catalog: 	 true
 tags:
