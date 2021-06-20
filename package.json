@@ -1,6 +1,6 @@
 {
   "name": "by-blog",
-  "title": "Wason Blog",
+  "title": "Wason的博客",
   "author": "Wason <wenghaoduan@163.com>",
   "version": "1.7.0",
   "homepage": "http://hao419.github.io",
@@ -10,7 +10,7 @@
   },
   "bugs": "https://github.com/hao419/hao419.github.io/issues",
   "devDependencies": {
-    "grunt": ">=1.3.0"
+    "grunt": ">=1.3.0",
     "grunt-contrib-less": "~0.11.4",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-banner": "~0.2.3",
