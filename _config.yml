@@ -1,17 +1,17 @@
 # Site settings
-title: Wason的博客
-SEOTitle: Wason的博客
+title: Wason Blog
+SEOTitle: Wason Blog
 header-img: img/post-bg-desk.jpg
 email: wenghaoduan@163.com
 description: "Every failure is leading towards success."
-keyword: "Wason, Wason的博客, Web, Vue, JS"
+keyword: "Wason, Wason Blog, Web, Vue, JS"
 url: "http://hao419.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/hao419/hao419.github.io.git" # you code repository
+github_repo: "https://github.com/hao419" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "Not Afraid"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -20,7 +20,7 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 RSS: false
 # weibo_username:     
 zhihu_username:     
-github_username:    
+github_username: hao419
 facebook_username: 
 jianshu_username:   0bfce20a708e
 #twitter_username:   
@@ -102,7 +102,7 @@ friends: [
         title: "baidu",
         href: "http://www.baidu.com"
     },{
-        title: "Wason的博客",
+        title: "Wason の Blog",
         href: "http://hao419.github.io/"
     }
 ]

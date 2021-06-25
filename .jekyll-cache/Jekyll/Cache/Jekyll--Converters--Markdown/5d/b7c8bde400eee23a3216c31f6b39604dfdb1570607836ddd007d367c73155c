@@ -1,5 +1,5 @@
-I"�<h1 id="工具篇-1">工具篇 1</h1>
-<p><strong>记录下日常开发有用到或收集的小方法</strong></p>
+I"�<h1 id="工具篇-1">工具篇 1</h1>
+<p><strong>记录下日常开发有用到或封装的函数</strong></p>
 
 <h3 id="1邮箱验证正则公式">1.邮箱验证正则公式</h3>
 
@@ -13,24 +13,22 @@
 ret.test(str)
 </code></pre></div></div>
 
-<p>===========2019-05-25=======
-过了一段时间，好像上面 👆 的验证效果不太满足现实需要，下面 👇 再补充个
+<p>===========2019-05-25=======</p>
+
+<p>过了一段时间，好像上面 👆 的验证效果不太满足现实需要，下面 👇 再补充个
 邮箱正则验证</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/[\w!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[\w!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/
 </code></pre></div></div>
 
 <h3 id="2用正则表达式获取-url-中的想要的参数get-类型-url">2.用正则表达式获取 url 中的想要的参数（get 类型 URL）</h3>
-
-<p>个人的使用场景是：
-有个前后端未分离 maven 项目，需要做 iframe 父子页面间传值，当时采用的是父页面把参数以 URL 形式组装并通过模板框架内部的 iframe 字符串传值方式发出，在子页面初次加载时，获取 window 的 url 并截取其参数，用来进行另外的接口请求。</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getUrlParam(name) {
-  var reg = new RegExp("(^|&amp;)" + name + "=([^&amp;]*)(&amp;|$)");
-  var r = window.location.search.substr(1).match(reg);
-  console.log(window.location.search);
-
-  if (r != null) return unescape(r[2]); return null;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function _getImgStrValue(str, key) {
+    return str.match(new RegExp("(^|&amp;|/?)" + key + "=([^&amp;]*)(&amp;|$)")) ? str.match(new RegExp("(^|&amp;|/?)" + key + "=([^&amp;]*)(&amp;|$)"))[2] : ''
 }
+
+e.g.
+var res = 'failed=0&amp;start_time=201908010000&amp;end_time=201908012359&amp;time_dur=1439&amp;interval=&amp;tail=Radar/CAPPI_Ref_256km&amp;tail_label=Reflectivity, 256km&amp;num_files=24&amp;ticket=nan&amp;dummy='
+
+var t_label = _getImgStrValue(res, 'tail_label’) // Reflectivity, 256km
 </code></pre></div></div>
 
 <p>只需调用上面 👆 方法，传想要获取数据的对应 key 关键字符，方法就会获取当前 window 的 URL 路径并与正则进行匹配，然后返回想要的数据。</p>
@@ -68,11 +66,11 @@ ret.test(str)
 
 <p><strong>如下方法(可以兼容 IE)</strong></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">unique</span> <span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">ary</span><span class="p">){</span>
-  <span class="k">return</span> <span class="n">obj</span><span class="p">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">item</span><span class="p">){</span>
-  <span class="k">return</span> <span class="n">ary</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="n">name</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-  <span class="p">})</span>
-<span class="p">}</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function unique (obj, ary){
+  return obj.filter(function(item){
+    return ary.indexOf(item.name) == -1;
+  })
+}
 </code></pre></div></div>
 <p>如果最后改 <code class="language-plaintext highlighter-rouge">return ary.indexOf(item.id) != -1</code>，则会返回被删除掉的对象数组的元素数据.
 当然，也有使用 ES6 的，一句代码搞定，不过不兼容 IE<code class="language-plaintext highlighter-rouge">const newArr = obj.filter(item =&gt; !ary.includes(item.id))</code>,因为 array.includes()不支持 IE</p>
