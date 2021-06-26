@@ -11,7 +11,7 @@ github_repo: "https://github.com/hao419" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Not Afraid"
+sidebar-about-description: "镜子可以映照出人的本性"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -22,7 +22,7 @@ RSS: false
 zhihu_username:     
 github_username: hao419
 facebook_username: 
-jianshu_username:   0bfce20a708e
+jianshu_username: 
 #twitter_username:   
 
 
