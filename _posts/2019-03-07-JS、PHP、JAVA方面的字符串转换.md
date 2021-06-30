@@ -7,9 +7,6 @@ author:     Wason
 header-img: img/post-bg-swift.jpg
 catalog: 	 true
 tags:
-    - JS
-    - PHP
-    - JAVA
     - 字符串转换
     - split
     - explode

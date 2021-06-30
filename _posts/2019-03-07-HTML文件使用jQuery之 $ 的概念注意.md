@@ -7,9 +7,7 @@ author:     Wason
 header-img: img/post-bg-keybord.jpg
 catalog: 	 true
 tags:
-    - HTML
     - jQuery
-    - $ 的使用
 ---
 # 前言
 HTML文件调用 jQuery，要有jQuery的对象概念
