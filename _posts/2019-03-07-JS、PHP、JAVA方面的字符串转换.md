@@ -4,7 +4,7 @@ title:      JS、PHP、JAVA方面的字符串转换
 subtitle:   
 date:       2019-03-07
 author:     Wason
-header-img: img/post-bg-swift.jpg
+header-img: img/bg/post-bg-swift.jpg
 catalog: 	 true
 tags:
     - 字符串转换

@@ -4,7 +4,7 @@ title:      JavaScript中的迭代器与循环
 subtitle:   
 date:       2019-01-02
 author:     BY
-header-img: img/post-bg-ios10.jpg
+header-img: img/bg/post-bg-ios10.jpg
 catalog: 	 true
 tags:
     - JS
